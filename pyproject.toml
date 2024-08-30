@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "jwtauth"
+version = "0.1.0"
+description = "jwt based authentication in fastapi"
+authors = ["acharyapuru <acharyapuru05@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.112.1"
+uvicorn = "^0.30.6"
+sqlalchemy = "^2.0.32"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+pyjwt = "^2.9.0"
+pydantic-settings = "^2.4.0"
+psycopg2 = "^2.9.9"
+pydantic = {extras = ["email"], version = "^2.8.2"}
+fastapi-mail = "^1.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
